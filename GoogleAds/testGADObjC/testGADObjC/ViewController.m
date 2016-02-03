@@ -57,6 +57,7 @@
     }
     else
     {
+        self.interstitial = [self createAndLoadInterstitial];//如果没ready就重新申请一次
         NSLog(@"interstitial not Ready");
         //close event
     }
