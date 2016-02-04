@@ -40,7 +40,7 @@ public class MainActivity extends ActionBarActivity {
         this.showBanner();
     }
 
-    void preloadAds()
+    public void preloadAds()
     {
         //banner
         bannerView = new BannerView(this, ADSize.BANNER, Constants.APPID, Constants.BannerPosID);
@@ -122,6 +122,8 @@ public class MainActivity extends ActionBarActivity {
     {
         bannerView.setVisibility(View.VISIBLE);
     }
+
+    public void hideBanner() { bannerView.setVisibility(View.INVISIBLE); }
 
     public void showInterstitial()
     {
